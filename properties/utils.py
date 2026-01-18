@@ -31,4 +31,7 @@ def get_redis_cache_metrics():
     # Log metrics
     logger.info(f"Redis Cache Metrics: Hits={hits}, Misses={misses}, Hit Ratio={hit_ratio:.2f}")
 
+    if total_requests > 0 else 0
+    logger.error
+
     return metrics
